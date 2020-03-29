@@ -38,10 +38,10 @@ export default function Incidents() {
     })
     setIncidents([...incidents, ...response.data])
     setTotal(response.headers['x-total-count'])
-    console.log(`página atual &{page}`)
+    console.log(`página atual ${page}`)
     setPage(page + 1)
     setLoading(false)
-    console.log(`página atual &{page}`)
+    console.log(`página atual ${page}`)
   }
 
   useEffect(() => {
